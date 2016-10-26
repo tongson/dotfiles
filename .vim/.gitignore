@@ -1,0 +1,10 @@
+*
+!.gitignore
+!after/
+!autoload/
+!colors/
+!doc/
+!ftdetect/
+!ftplugin/
+!plugin/
+!syntax/
