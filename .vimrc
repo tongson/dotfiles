@@ -1,12 +1,4 @@
-" source $VIMRUNTIME/vimrc_example.vim
 set background=dark
-" set relativenumber
-" hi LineNr ctermfg=239
-" hi CursorLine term=bold ctermfg=Yellow gui=none guifg=Yellow
-" set textwidth=100
-" hi ColorColumn ctermbg=239
-" set list
-" set listchars=tab:>-,trail:*,nbsp:*
 set t_Co=16
 set nocompatible
 inoremap jj <ESC>
@@ -39,8 +31,6 @@ filetype on
 au BufNewFile,BufRead *.mk set filetype=make
 filetype plugin indent on
 syntax on
-"highlight RedundantSpaces ctermbg=red guibg=red
-"match RedundantSpaces /\s\+$\| \+\ze\t\|\t/
 set nobackup
 set nowb
 set noswapfile
@@ -90,4 +80,3 @@ else
   hi FoldColumn ctermbg=black
   hi ColorColumn ctermbg=black
 endif
-
