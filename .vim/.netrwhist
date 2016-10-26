@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/ed/repo/omnia/vendor/c/auxlib'
+let g:netrw_dirhist_2='/Users/ed/.vim'
+let g:netrw_dirhist_3='/Users/ed/.git'
+let g:netrw_dirhist_4='/Users/ed/.vim'
