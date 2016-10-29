@@ -1,7 +1,8 @@
 set background=dark
 set t_Co=16
 set nocompatible
-imap jj <ESC>
+inoremap jk <ESC>
+inoremap <esc> <NOP>
 set nonu
 set colorcolumn=120
 set noesckeys
