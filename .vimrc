@@ -2,7 +2,9 @@ set background=dark
 set t_Co=16
 set nocompatible
 inoremap jk <ESC>
+vnoremap jk <ESC>
 inoremap <esc> <NOP>
+vnoremap <esc> <NOP>
 set nonu
 set colorcolumn=120
 set noesckeys
@@ -44,6 +46,14 @@ nnoremap <Up> <nop>
 nnoremap <Down> <nop>
 nnoremap <Left> <nop>
 nnoremap <Right> <nop>
+inoremap <Up> <nop>
+inoremap <Down> <nop>
+inoremap <Left> <nop>
+inoremap <Right> <nop>
+vnoremap <Up> <nop>
+vnoremap <Down> <nop>
+vnoremap <Left> <nop>
+vnoremap <Right> <nop>
 " Make Y yank everything from the cursor to the end of the line. This makes Y
 " act more like C or D because by default, Y yanks the current line (i.e. the
 " same as yy).
