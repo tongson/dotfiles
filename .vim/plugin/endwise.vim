@@ -31,11 +31,6 @@ augroup endwise " {{{1
         \ let b:endwise_words = 'then,case,do' |
         \ let b:endwise_pattern = '\%(^\s*\zscase\>\ze\|\zs\<\%(do\|then\)\ze\s*$\)' |
         \ let b:endwise_syngroups = 'shConditional,shLoop,shIf,shFor,shRepeat,shCaseEsac,zshConditional,zshRepeat,zshDelimiter'
-  autocmd FileType vb,vbnet,aspvbs
-        \ let b:endwise_addition = 'End &' |
-        \ let b:endwise_words = 'Function,Sub,Class,Module,Enum,Namespace' |
-        \ let b:endwise_pattern = '\%(\<End\>.*\)\@<!\<&\>' |
-        \ let b:endwise_syngroups = 'vbStatement,vbnetStorage,vbnetProcedure,vbnet.*Words,AspVBSStatement'
   autocmd FileType vim
         \ let b:endwise_addition = 'end&' |
         \ let b:endwise_words = 'fu,fun,func,function,wh,while,if,for,try' |
@@ -50,10 +45,6 @@ augroup endwise " {{{1
         \ let b:endwise_words = 'interface,implementation' |
         \ let b:endwise_pattern = '^\s*@\%(interface\|implementation\)\>' |
         \ let b:endwise_syngroups = 'objcObjDef'
-  autocmd FileType matlab
-        \ let b:endwise_addition = 'end' |
-        \ let b:endwise_words = 'function,if,for' |
-        \ let b:endwise_syngroups = 'matlabStatement,matlabFunction,matlabConditional,matlabRepeat'
 augroup END " }}}1
 
 " Maps {{{1
