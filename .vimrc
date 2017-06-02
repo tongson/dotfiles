@@ -33,6 +33,7 @@ set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,latin1
 set completeopt-=preview
 set complete-=i
+set sessionoptions-=options
 set cursorline
 set grepprg=grep\ -nH\ $*
 set statusline=%<%f%=\ [%1*%M%*%n%R]\ y\ %-19(%3l,%02c%03V%)
