@@ -1,9 +1,12 @@
 set background=dark
 syntax enable
+filetype on
+filetype plugin indent on
 set t_Co=256
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 colorscheme solarized
+let g:is_posix = 1
 set nocompatible
 set colorcolumn=120
 set noesckeys
@@ -37,9 +40,6 @@ set sessionoptions-=options
 set cursorline
 set grepprg=grep\ -nH\ $*
 set statusline=%<%f%=\ [%1*%M%*%n%R]\ y\ %-19(%3l,%02c%03V%)
-filetype on
-filetype plugin indent on
-let g:is_posix = 1
 hi CursorLine cterm=NONE ctermbg=black ctermfg=white
 hi ColorColumn cterm=NONE ctermbg=black
 hi FoldColumn cterm=NONE ctermbg=black
