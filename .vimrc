@@ -26,8 +26,7 @@ set ttyfast
 set showcmd
 set encoding=utf-8
 set nobackup
-set foldcolumn=1
-set foldmethod=manual
+set nofoldenable
 set nowb
 set noswapfile
 set fileencoding=utf-8
