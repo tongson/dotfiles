@@ -17,6 +17,7 @@ set expandtab
 set smarttab
 set shiftwidth=4
 set scrolloff=2
+set sidescroll=1
 set ignorecase
 set smartcase
 set backspace=indent,eol,start
