@@ -1,5 +1,9 @@
 set background=dark
-set t_Co=16
+syntax enable
+set t_Co=256
+let g:solarized_termtrans=1
+let g:solarized_termcolors=256
+colorscheme solarized
 set nocompatible
 set colorcolumn=120
 set noesckeys
@@ -28,21 +32,13 @@ set nowb
 set noswapfile
 set fileencoding=utf-8
 set fileencodings=ucs-bom,utf-8,latin1
-set completeopt=longest,menuone
+set completeopt-=preview
 set cursorline
 set grepprg=grep\ -nH\ $*
 set statusline=%<%f%=\ [%1*%M%*%n%R]\ y\ %-19(%3l,%02c%03V%)
 filetype on
 filetype plugin indent on
-syntax on
-let g:is_posix     = 1
-if &background ==# 'light'
-  colorscheme ironman
-  hi Folded ctermbg=white
-  hi FoldColumn ctermbg=white
-  hi ColorColumn ctermbg=white
-else
-  hi Folded ctermbg=black
-  hi FoldColumn ctermbg=black
-  hi ColorColumn ctermbg=black
-endif
+let g:is_posix = 1
+hi CursorLine cterm=NONE ctermbg=black ctermfg=white
+hi ColorColumn cterm=NONE ctermbg=black
+hi FoldColumn cterm=NONE ctermbg=black
