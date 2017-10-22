@@ -30,6 +30,7 @@
     # list aliases
     la = "!git config -l | grep alias | cut -c 7-"
     fixup = "!f() { TARGET=$(git rev-parse "$1"); git commit --fixup=$TARGET ${@:2} && EDITOR=true git rebase -i --autostash --autosquash $TARGET^; }; f"
+    prev = "!git ls-files -z "*.$1" | xargs -0 git log @{1}.. -p --"
 [pull]
 	ff = only
 [stash]
