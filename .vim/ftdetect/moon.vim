@@ -13,4 +13,4 @@ function! s:DetectMoon()
 endfunction
 
 autocmd BufNewFile,BufRead * call s:DetectMoon()
-au FileType moon setlocal expandtab smarttab shiftwidth=3 tabstop=3 softtabstop=3 nolist
+au FileType moon setlocal expandtab smarttab shiftwidth=4 tabstop=4 softtabstop=4 nolist
