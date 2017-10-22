@@ -42,6 +42,6 @@ set langnoremap
 set cursorline
 set grepprg=grep\ -nH\ $*
 set statusline=%<%f%=\ [%1*%M%*%n%R]\ y\ %-19(%3l,%02c%03V%)
-hi CursorLine cterm=NONE ctermbg=black ctermfg=white
+hi CursorLine cterm=NONE ctermbg=black
 hi ColorColumn cterm=NONE ctermbg=black
 hi FoldColumn cterm=NONE ctermbg=black
